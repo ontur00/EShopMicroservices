@@ -1,8 +1,7 @@
-﻿
-using Catalog.API.Products.GetProductByCategory;
+﻿using Catalog.API.Products.GetProductByCategory;
 using Catalog.API.Products.UpdateProduct;
 
-namespace Catalog.API.DeleteProduct
+namespace Catalog.API.Products.DeleteProduct
 {
     public record DeleteProductCommand(Guid Id) 
             : ICommand<DeleteProductResult>;
