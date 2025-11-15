@@ -1,0 +1,15 @@
+﻿using Ordering.Domain.Abstractions;
+
+namespace Ordering.Domain
+{
+    public interface IAggregate<T> : IAggregate, IEntity<T>
+    {
+    }
+
+    public interface IAggregate : IEntity
+    {
+        IReadOnlyList<IDomainEvent> DomainEvents { get; }
+
+        IDomainEvent[] ClearDomainEvents();
+    }
+}
