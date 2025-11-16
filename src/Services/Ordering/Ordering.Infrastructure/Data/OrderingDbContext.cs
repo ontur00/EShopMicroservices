@@ -4,9 +4,9 @@ using System.Reflection;
 
 namespace Ordering.Infrastructure.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class OrderingDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public OrderingDbContext(DbContextOptions<OrderingDbContext> options)
             : base(options) {}
 
         public DbSet<Customer> Customers => Set<Customer>();
