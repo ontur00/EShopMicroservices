@@ -12,7 +12,7 @@ using Ordering.Infrastructure.Data;
 
 namespace Ordering.Infrastructure.Data.Migrations
 {
-    [DbContext(typeof(OrderingDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20251116181844_InitialCreate")]
     partial class InitialCreate
     {

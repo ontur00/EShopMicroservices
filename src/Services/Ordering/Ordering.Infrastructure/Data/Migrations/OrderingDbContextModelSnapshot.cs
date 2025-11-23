@@ -11,7 +11,7 @@ using Ordering.Infrastructure.Data;
 
 namespace Ordering.Infrastructure.Data.Migrations
 {
-    [DbContext(typeof(OrderingDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     partial class OrderingDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
