@@ -10,4 +10,6 @@ global using Basket.API.Exceptions;
 global using Basket.API.Data;
 global using Microsoft.Extensions.Caching.Distributed;
 global using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+global using Basket.API.Dtos;
+
 
